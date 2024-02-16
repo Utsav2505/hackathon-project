@@ -1,7 +1,8 @@
 import React from "react";
 import "./header.css";
 
-export default function Header() {
+export default function Header({ setCurrentPage }) {
+    
   return (
     <>
       <div className="HyperNav">
@@ -9,9 +10,9 @@ export default function Header() {
             <p>GAURDLINK</p>
         </div>
         <div className="mainNav">
-          <p>home</p>
-          <p>about</p>
-          <p>github</p>
+          <button onClick={() => setCurrentPage('home')}>Home</button>
+          <button onClick={() => setCurrentPage('about')}>About</button>
+          <p>Github</p>
         </div>
         <div className="mainNav">
             <p>here is the time</p>
@@ -20,3 +21,26 @@ export default function Header() {
     </>
   );
 }
+
+// const [currentPage, setCurrentPage] = useState('home');
+
+  // const renderPage = () => {
+  //   switch (currentPage) {
+  //     case 'home':
+  //       return <HomePage />;
+  //     case 'about':
+  //       return <AboutPage />;
+  //     default:
+  //       return null;
+  //   }
+  // };
+
+  // return (
+  //   <div>
+  //     <nav>
+  //       <button onClick={() => setCurrentPage('home')}>Home</button>
+  //       <button onClick={() => setCurrentPage('about')}>About</button>
+  //     </nav>
+  //     {renderPage()}
+  //   </div>
+  // );

@@ -5,7 +5,7 @@ import Content from './Content';
 function App() {
   return (
     <>
-      <Header />
+      
       <br />
       <br />
       <Content />
