@@ -5,7 +5,6 @@ import Content from './Content';
 function App() {
   return (
     <>
-      
       <br />
       <br />
       <Content />

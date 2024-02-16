@@ -1,6 +1,6 @@
 import React from "react";
 import "./header.css";
-
+import Time from "./time"
 export default function Header({ setCurrentPage }) {
     
   return (
@@ -15,7 +15,7 @@ export default function Header({ setCurrentPage }) {
           <p>Github</p>
         </div>
         <div className="mainNav">
-            <p>here is the time</p>
+            <Time/>
         </div>
       </div>
     </>
